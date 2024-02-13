@@ -19,3 +19,7 @@ y_pred_ann = ann_model.predict(X_test)
 accuracy_ann = accuracy_score(y_test, y_pred_ann)
 conf_matrix_ann = confusion_matrix(y_test, y_pred_ann)
 classification_report_ann = classification_report(y_test, y_pred_ann)
+
+print("ANN Model Evaluation:")
+print(f"Accuracy: {accuracy_ann}")
+print(f"Classification Report:\n{classification_report_ann}\n")
